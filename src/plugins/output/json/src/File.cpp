@@ -390,7 +390,7 @@ File::file_create(ipx_ctx_t *ctx, const std::string &tmplt, const std::string &p
     }
 
     // Convert time template to a string
-    if (strftime(file_fmt, sizeof(file_fmt), "%Y%m%d%H%M", &gm) == 0) {
+    if (strftime(file_fmt, sizeof(file_fmt), "%Y%m%d%H%M%S", &gm) == 0) {
         IPX_CTX_ERROR(ctx, "(File output) Failed to create a name of a flow file.", '\0');
         return NULL;
     }

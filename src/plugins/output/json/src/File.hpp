@@ -65,7 +65,7 @@ public:
     void flush();
 private:
     /** Minimal window size */
-    const unsigned int _WINDOW_MIN_SIZE = 60; // seconds
+    const unsigned int _WINDOW_MIN_SIZE = 1; // seconds
 
     /** Configuration of a thread */
     typedef struct thread_ctx_s {
